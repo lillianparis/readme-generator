@@ -16,3 +16,8 @@
 
 let inquirer = require("inquirer");
 let fs = require('fs');
+
+inquirer.prompt {(
+    type: 'input',
+    
+)}
