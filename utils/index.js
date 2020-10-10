@@ -26,49 +26,49 @@ inquirer
       
         {
             type: "input",
-            name: "github",
+            name: "Github",
             message: "What is your Github username?"
         },
         {
             type: "input",
-            name: "email",
+            name: "Email",
             message: "What is your email adress?"
         },
         {
             type: "input",
-            name: "title",
+            name: "Title",
             message: "What is your project title?"
         },
         {
             type: "input",
-            name: "description",
+            name: "Description",
             message: "Please write a short description of your project"
         },
         {
             type: "input",
-            name: "liscence",
+            name: "Liscence",
             message: "Please pick a liscence"
         },
         {
             type: "input",
-            name: "dependancies",
+            name: "Dependancies",
             message: "What command should be run to install dependancies?"
             // example npm install
         },
         {
             type: "input",
-            name: "tests",
+            name: "Tests",
             message: "What command should be run to run tests"
             // example npm test
         },
         {
             type: "input",
-            name: "usage",
+            name: "Usage",
             message: "What does the user need to know about using your repo?"
         },
         {
             type: "input",
-            name: "contributing",
+            name: "Contributing",
             message: "What does the user need to know about contributing to the repo?"
         },
         // starts generating readme
