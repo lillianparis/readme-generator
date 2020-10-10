@@ -21,6 +21,36 @@ let fs = require('fs');
 inquirer
     .prompt([
         /* Pass your questions in here */
+        {
+            type: "input",
+            name: "title",
+            message: "What is your project title?"
+        },
+        {
+            type: "input",
+            name: "github",
+            message: "What is your Github username?"
+        },
+        {
+            type: "input",
+            name: "email",
+            message: "What is your email adress"
+        },
+        {
+            type: "input",
+            name: "email",
+            message: "What is your email adress"
+        },
+        {
+            type: "input",
+            name: "usage",
+            message: "What does the user need to know about using your repo?"
+        },
+        {
+            type: "input",
+            name: "contributing",
+            message: "What does the user need to know about contributing to the repo?"
+        },
     ])
     .then(answers => {
         // Use user feedback for... whatever!!
