@@ -57,3 +57,10 @@ inquirer
     function writeToFile(fileName, data) {
         return fs.writeFileSync(path.join(process.cwd(), fileName), data);
     }
+
+    function init() {
+        inquirer.prompt(questions)
+        .then((inquireResponses) => {
+            console.log("Generating Readme...")
+        })
+    }
