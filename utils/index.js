@@ -52,13 +52,8 @@ inquirer
             message: "What does the user need to know about contributing to the repo?"
         },
     ])
-    .then(answers => {
-        // Use user feedback for... whatever!!
-    })
-    .catch(error => {
-        if (error.isTtyError) {
-            // Prompt couldn't be rendered in the current environment
-        } else {
-            // Something else when wrong
-        }
-    });
+
+
+    function writeToFile(fileName, data) {
+        return fs.writeFileSync(path.join(process.cwd(), fileName), data);
+    }
