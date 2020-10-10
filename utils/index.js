@@ -14,6 +14,8 @@
 // WHEN I click on the links in the Table of Contents
 // THEN I am taken to the corresponding section of the README
 
+// npn install first
+
 let inquirer = require("inquirer");
 let fs = require('fs');
 
@@ -21,11 +23,7 @@ let fs = require('fs');
 inquirer
     .prompt([
         /* Pass your questions in here */
-        {
-            type: "input",
-            name: "title",
-            message: "What is your project title?"
-        },
+      
         {
             type: "input",
             name: "github",
@@ -34,12 +32,34 @@ inquirer
         {
             type: "input",
             name: "email",
-            message: "What is your email adress"
+            message: "What is your email adress?"
         },
         {
             type: "input",
-            name: "email",
-            message: "What is your email adress"
+            name: "title",
+            message: "What is your project title?"
+        },
+        {
+            type: "input",
+            name: "description",
+            message: "Please write a short description of your project"
+        },
+        {
+            type: "input",
+            name: "liscence",
+            message: "Please pick a liscence"
+        },
+        {
+            type: "input",
+            name: "dependancies",
+            message: "What command should be run to install dependancies?"
+            // example npm install
+        },
+        {
+            type: "input",
+            name: "tests",
+            message: "What command should be run to run tests"
+            // example npm test
         },
         {
             type: "input",
@@ -51,6 +71,7 @@ inquirer
             name: "contributing",
             message: "What does the user need to know about contributing to the repo?"
         },
+        // starts generating readme
     ])
 
 
