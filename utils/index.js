@@ -19,7 +19,7 @@
 let inquirer = require("inquirer");
 let fs = require('fs');
 
-
+// Questions for the user 
 inquirer
     .prompt([
         /* Pass your questions in here */
@@ -47,7 +47,13 @@ inquirer
         {
             type: "input",
             name: "Liscence",
-            message: "Please pick a liscence"
+            message: "Please pick a liscence",
+            choices: [
+                "MIT",
+                "Mozilla",
+                "Apache License 2.0",
+                "Boost Software License 1.0",
+            ],
         },
         {
             type: "input",
