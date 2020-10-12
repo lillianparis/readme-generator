@@ -16,12 +16,14 @@
 
 // npn install first
 
-let inquirer = require("inquirer");
-let fs = require('fs');
+const inquirer = require("inquirer");
+const fs = require('fs');
+const path = require("path");
+const makeReadMeFile = require("./makeReadMeFile.js");
 
 // Questions for the user 
 inquirer
-    .prompt([
+    const questions =[
         /* Pass your questions in here */
       
         {
@@ -45,9 +47,9 @@ inquirer
             message: "Please write a short description of your project"
         },
         {
-            type: "input",
-            name: "Liscence",
-            message: "Please pick a liscence",
+            type: "list",
+            name: "License",
+            message: "Please pick a license",
             choices: [
                 "MIT",
                 "Mozilla",
@@ -58,19 +60,22 @@ inquirer
         {
             type: "input",
             name: "Dependancies",
-            message: "What command should be run to install dependancies?"
+            message: "What command should be run to install dependancies?",
+            default: "npm install"
             // example npm install
         },
         {
             type: "input",
             name: "Tests",
-            message: "What command should be run to run tests"
+            message: "What command should be run to run tests?",
+            default: "npm test"
             // example npm test
         },
         {
             type: "input",
             name: "Usage",
             message: "What does the user need to know about using your repo?"
+
         },
         {
             type: "input",
@@ -78,7 +83,7 @@ inquirer
             message: "What does the user need to know about contributing to the repo?"
         },
         // starts generating readme
-    ])
+    ]
 
 
     function writeToFile(fileName, data) {
@@ -88,6 +93,13 @@ inquirer
     function init() {
         inquirer.prompt(questions)
         .then((inquireResponses) => {
-            console.log("Generating Readme...")
+            // console.log("Generating Readme...")
+            // targets readme.md file, writes to
+            writeToFile("README.md", makeReadMeFile({...inquireResponses}))
+            
+            console.log(inquireResponses);
         })
+        // .catch(err)
+        // console.log(err)
     }
+    init();
