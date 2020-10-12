@@ -16,6 +16,19 @@ function showLicenseLink(lisence) {
     }
     return ``
 }
+
+function projectContents() {
+    let render = `
+    ## Table of Contents: \n
+    * [Title](#Title) \n
+    * [Github](#Github) \n
+    * [Description](#Description) \n
+    * [Contributors](#Contributors) \n
+    * [Contact](#Contact) \n
+    * [License](#License) \n
+    `;
+    return render
+  }
 function showLicenseSection(license) {
     if (license !== "None") {
         return (`## License
@@ -24,10 +37,13 @@ function showLicenseSection(license) {
     return``
 }
 
-
-
+function projDescription(description){
+    let descriptionString = description;
+    let render = `## Description: \n ${descriptionString} \n`;
+    return render 
+}
 function makeReadMeFile(data) {
-return `${data.Title} ${data.Description} ${data.Github} ${data.Email}`
+return `${data.Title}  ${data.Github} ${data.Email}`
 // $(showLicenses(data.license))
 
 
