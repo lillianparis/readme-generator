@@ -27,7 +27,7 @@ function showLicenseSection(license) {
 
 
 function makeReadMeFile(data) {
-return `# ${data.Title}`
+return `${data.Title} ${data.Description} ${data.Github} ${data.Email}`
 // $(showLicenses(data.license))
 
 
