@@ -39,36 +39,36 @@ function makeReadMeFile(response) {
     # Table of Content \n
     -[Description](#description) \n
     -[usage](#usage) \n
-    -[licenses](#licenses) \n
     -[contribution](#contribution) \n
+    -[dependencies](#dependancies) \n
     -[test](#test) \n
     -[username](#username) \n
     -[email](#email) \n
+    -[licenses](#licenses) \n
 
     ##Description
     ${response.Description}
 
     ##Usage
     ${response.Usage}
-    -->Insert appropriate data here etc..
 
-    ##License
-    ${showLicenses(response.License)}
+    ##Contribution
+    ${response.Contributing}
 
-    ##etc.....Add headers accordingly
-
-    ##Contribution 
-    ${response.Contribution}
-
+    ##Dependancies
+    ${response.Dependancies}
+    
     ##Test
-    ${response.Test}
-
+    ${response.Tests}
+    
     ##Username
     ${response.Username}
-
+    
     #Email
     ${response.Email}
-
+    
+    ##License
+    ${showLicenses(response.License)}
 
     `
 }

@@ -1,14 +1,10 @@
 
-    # A Good Readme Generator
+    # This is a good Readme Generator
     # Table of Content 
 
     -[Description](#description) 
 
-    -[installation](#installation) 
-
     -[usage](#usage) 
-
-    -[licenses](#licenses) 
 
     -[contribution](#contribution) 
 
@@ -18,33 +14,28 @@
 
     -[email](#email) 
 
+    -[licenses](#licenses) 
+
 
     ##Description
-    This is an efficient way to create a readme
-
-    ##Installation
-   undefined
+    This is quick and easy to use
 
     ##Usage
-    This is quick and easy
-    -->Insert appropriate data here etc..
+    This is efficient
 
-    ##License
-    ![Github license](https://img.shields.io/badge/liscence-MIT-blue.svg)
-
-    ##etc.....Add headers accordingly
-
-    ##Contribution 
-    undefined
-
+    ##Contribution
+    This is not
+    
     ##Test
-    undefined
-
+    npm test
+    
     ##Username
     lillianparis
-
+    
     #Email
     lillian.paris529@gmail.com
-
+    
+    ##License
+    ![Github license](https://img.shields.io/badge/liscence-Boost Software License 1.0-blue.svg)
 
     
