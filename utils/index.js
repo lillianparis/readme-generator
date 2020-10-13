@@ -18,6 +18,7 @@
 
 const inquirer = require("inquirer");
 const fs = require('fs');
+const axios = require('axios').default;
 const path = require("path");
 const makeReadMeFile = require("./makeReadMeFile.js");
 
@@ -93,7 +94,7 @@ function writeToFile(fileName, data) {
 function init() {
     inquirer.prompt(questions)
         .then((inquireResponses) => {
-            // console.log("Generating Readme...")
+            console.log("Generating Readme...")
             // targets readme.md file, writes to
             writeToFile("README.md", makeReadMeFile({ ...inquireResponses }))
 
@@ -103,3 +104,9 @@ function init() {
     // console.log(err)
 }
 init();
+
+// const userName = questions.userName
+// axios.get(`https://api.github.com/users/${userName}`)
+// .then(questions => {
+//     console.log(questions.data);
+// })

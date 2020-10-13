@@ -27,7 +27,7 @@
 //     * [Contact](#Contact) \n
 //     * [License](#License) \n
 //     `;
-   
+
 //     return render
 //   }
 // function showLicenseSection(license) {
@@ -48,23 +48,49 @@
 // }
 function makeReadMeFile(response) {
     return `
-    # ${response.title}
-    # Table of Content
-    -[Description](#description)
-    -[installation](#installation)
-    -[usage](#usage)
-    -[licenses](#licenses)
-    -[contribution](#contribution)
-    -[test](#test)
-    -[username](#username)
-    -[profile](#profile)
-    
-    ${response.username}
-    ##username:
-    ${response.description}`
+    # ${response.Title}
+    # Table of Content \n
+    -[Description](#description) \n
+    -[installation](#installation) \n
+    -[usage](#usage) \n
+    -[licenses](#licenses) \n
+    -[contribution](#contribution) \n
+    -[test](#test) \n
+    -[username](#username) \n
+    -[profile](#profile) \n`
 }
 
-// exporting into the readme
+        function Description(Description) {
+            let descripString = Description;
+            let render = `## Description: \n ${descripString} \n`;
+            return render
+        }
 
-module.exports = makeReadMeFile;
+    module.exports = makeReadMeFile;
+// //     ${response.Github}
+// //     ##Github:
+// //     ${response.Description}
+// //     ##Description:
+// //     ${response.installation}
+// //     ##installation:
+// //     ${response.Usage}
+// //     ##Usage
+
+// //     ${response.License}
+// // ##License:
+// //     ${response.Contributing}
+// // ##Contribution:
+
+// //     ${response.test}
+// // ##test:
+
+// //     ${response.Email}
+// // ##Email:
+
+//     ${response.profile}
+// ##profile:
+// `;
+// }
+
+// exporting into the readme
 
