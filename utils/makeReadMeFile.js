@@ -32,7 +32,7 @@ function projDescription(description) {
     let render = `## Description: \n ${descriptionString} \n`;
     return render
 }
-
+// Ths displays the table of contents as well as the user input
 function makeReadMeFile(response) {
     return `
     # ${response.Title}
@@ -73,31 +73,6 @@ function makeReadMeFile(response) {
     `
 }
 
-
-// //     ${response.Github}
-// //     ##Github:
-// //     ${response.Description}
-// //     ##Description:
-// //     ${response.installation}
-// //     ##installation:
-// //     ${response.Usage}
-// //     ##Usage
-
-// //     ${response.License}
-// // ##License:
-// //     ${response.Contributing}
-// // ##Contribution:
-
-// //     ${response.test}
-// // ##test:
-
-// //     ${response.Email}
-// // ##Email:
-
-//     ${response.profile}
-// ##profile:
-// `;
-// }
 
 // exporting into the readme
 

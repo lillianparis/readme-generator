@@ -105,8 +105,4 @@ function init() {
 }
 init();
 
-// const userName = questions.userName
-// axios.get(`https://api.github.com/users/${userName}`)
-// .then(questions => {
-//     console.log(questions.data);
-// })
+
