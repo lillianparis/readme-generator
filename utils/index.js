@@ -23,83 +23,83 @@ const makeReadMeFile = require("./makeReadMeFile.js");
 
 // Questions for the user 
 inquirer
-    const questions =[
-        /* Pass your questions in here */
-      
-        {
-            type: "input",
-            name: "Github",
-            message: "What is your Github username?"
-        },
-        {
-            type: "input",
-            name: "Email",
-            message: "What is your email adress?"
-        },
-        {
-            type: "input",
-            name: "Title",
-            message: "What is your project title?"
-        },
-        {
-            type: "input",
-            name: "Description",
-            message: "Please write a short description of your project"
-        },
-        {
-            type: "list",
-            name: "License",
-            message: "Please pick a license",
-            choices: [
-                "MIT",
-                "Mozilla",
-                "Apache License 2.0",
-                "Boost Software License 1.0",
-            ],
-        },
-        {
-            type: "input",
-            name: "Dependancies",
-            message: "What command should be run to install dependancies?",
-            default: "npm install"
-            // example npm install
-        },
-        {
-            type: "input",
-            name: "Tests",
-            message: "What command should be run to run tests?",
-            default: "npm test"
-            // example npm test
-        },
-        {
-            type: "input",
-            name: "Usage",
-            message: "What does the user need to know about using your repo?"
+const questions = [
+    /* Pass your questions in here */
 
-        },
-        {
-            type: "input",
-            name: "Contributing",
-            message: "What does the user need to know about contributing to the repo?"
-        },
-        // starts generating readme
-    ]
+    {
+        type: "input",
+        name: "Github",
+        message: "What is your Github username?"
+    },
+    {
+        type: "input",
+        name: "Email",
+        message: "What is your email adress?"
+    },
+    {
+        type: "input",
+        name: "Title",
+        message: "What is your project title?"
+    },
+    {
+        type: "input",
+        name: "Description",
+        message: "Please write a short description of your project"
+    },
+    {
+        type: "list",
+        name: "License",
+        message: "Please pick a license",
+        choices: [
+            "MIT",
+            "Mozilla",
+            "Apache License 2.0",
+            "Boost Software License 1.0",
+        ],
+    },
+    {
+        type: "input",
+        name: "Dependancies",
+        message: "What command should be run to install dependancies?",
+        default: "npm install"
+        // example npm install
+    },
+    {
+        type: "input",
+        name: "Tests",
+        message: "What command should be run to run tests?",
+        default: "npm test"
+        // example npm test
+    },
+    {
+        type: "input",
+        name: "Usage",
+        message: "What does the user need to know about using your repo?"
+
+    },
+    {
+        type: "input",
+        name: "Contributing",
+        message: "What does the user need to know about contributing to the repo?"
+    },
+    // starts generating readme
+]
 
 
-    function writeToFile(fileName, data) {
-        return fs.writeFileSync(path.join(process.cwd(), fileName), data);
-    }
+function writeToFile(fileName, data) {
+    return fs.writeFileSync(path.join(process.cwd(), fileName), data);
+}
 
-    function init() {
-        inquirer.prompt(questions)
+function init() {
+    inquirer.prompt(questions)
         .then((inquireResponses) => {
             // console.log("Generating Readme...")
             // targets readme.md file, writes to
-            writeToFile("README.md", makeReadMeFile({...inquireResponses}))
-            
+            writeToFile("README.md", makeReadMeFile({ ...inquireResponses }))
+
             console.log(inquireResponses);
         })
-        // .catch(err)
-        // console.log(err)
-    }
-    init();
+    // .catch(err)
+    // console.log(err)
+}
+init();

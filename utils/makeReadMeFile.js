@@ -27,6 +27,7 @@ function projectContents() {
     * [Contact](#Contact) \n
     * [License](#License) \n
     `;
+   
     return render
   }
 function showLicenseSection(license) {
@@ -44,9 +45,13 @@ function projDescription(description){
 }
 function makeReadMeFile(data) {
 return `${data.Title}  ${data.Github} ${data.Email}`
-// $(showLicenses(data.license))
-
-
 }
 
+
+// exporting into the readme
 module.exports = makeReadMeFile;
+module.exports = projDescription;
+module.exports = showLicenseSection;
+module.exports = projectContents;
+module.exports = showLicenseLink;
+module.exports = showLicenses;
