@@ -38,7 +38,6 @@ function makeReadMeFile(response) {
     # ${response.Title}
     # Table of Content \n
     -[Description](#description) \n
-    -[installation](#installation) \n
     -[usage](#usage) \n
     -[licenses](#licenses) \n
     -[contribution](#contribution) \n
@@ -48,9 +47,6 @@ function makeReadMeFile(response) {
 
     ##Description
     ${response.Description}
-
-    ##Installation
-   ${response.Installation}
 
     ##Usage
     ${response.Usage}
