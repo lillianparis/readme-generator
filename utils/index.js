@@ -29,7 +29,7 @@ const questions = [
 
     {
         type: "input",
-        name: "Github",
+        name: "Username",
         message: "What is your Github username?"
     },
     {
