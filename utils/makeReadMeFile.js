@@ -16,7 +16,7 @@ function showLicenseLink(lisence) {
     }
     return ``
 }
-
+// Titles for information inputed to populate....
 function projectContents() {
     let render = `
     ## Table of Contents: \n
