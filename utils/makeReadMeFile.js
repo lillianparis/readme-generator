@@ -32,16 +32,16 @@ function showLicenses(license) {
 //     let render = `## Description: \n ${descriptionString} \n`;
 //     return render
 // }
+
 // Ths displays the table of contents as well as the user input
 function makeReadMeFile(response) {
 return `
 # ${response.Title}
 # Table of Contents \n
 *[Description](#description) \n
-*[Installation Instructions](#Installation Instructions) \n
+*[Installation](#Installation) \n
 *[usage](#usage) \n
 *[contribution](#contribution) \n
-*[dependencies](#dependancies) \n
 *[test](#test) \n
 *[username](#username) \n
  *[email](#email) \n
@@ -65,8 +65,6 @@ ${response.Usage}
 ## Contribution
 ${response.Contributing}
 
-## Dependancies
-${response.Dependancies}
     
 ## Test
 ${response.Tests}

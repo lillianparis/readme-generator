@@ -1,10 +1,10 @@
 
-# rgrwree
+# Good Readme Generator!
 # Table of Contents 
 
 *[Description](#description) 
 
-*[Installation Instructions](#Installation Instructions) 
+*[Installation](#Installation) 
 
 *[usage](#usage) 
 
@@ -24,7 +24,7 @@
 
 
 ## Description
-oeirjgirejie
+This is a quick and efficient way to creat your readme. This helps save time spent on your readme so you can focus more attention onthe code.
 
 
 ## Installation
@@ -35,10 +35,10 @@ npm install
 ```
 
 ## Usage
-erew
+This is strightforward and simple
 
 ## Contribution
-erwgr
+
 
 ## Dependancies
 undefined
@@ -47,15 +47,15 @@ undefined
 npm test
     
 ## Username
-lilllian paris
+lillianparis
     
 ## Email
-    lilliohfie
+    lillian.paris529@gmail.com
     
 ## License
     ![Github license](https://img.shields.io/badge/liscence-MIT-blue.svg)
 
 ## Questions
 
-If you have any questions about the repo, you may contact me directly at lilliohfie. You can find more of my work at [lilllian paris](https://github.com/lilllian paris)
+If you have any questions about the repo, you may contact me directly at lillian.paris529@gmail.com. You can find more of my work at [lillianparis](https://github.com/lillianparis)
 
