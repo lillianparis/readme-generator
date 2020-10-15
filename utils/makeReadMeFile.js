@@ -34,53 +34,57 @@ function showLicenses(license) {
 // }
 // Ths displays the table of contents as well as the user input
 function makeReadMeFile(response) {
-    return `
-    # ${response.Title}
-    # Table of Contents \n
-    *[Description](#description) \n
-    *[Installation Instructions](#Installation Instructionsnode) \n
-    *[usage](#usage) \n
-    *[contribution](#contribution) \n
-    *[dependencies](#dependancies) \n
-    *[test](#test) \n
-    *[username](#username) \n
-    *[email](#email) \n
-    *[licenses](#licenses) \n
-    *[Contact for Questions](#Contact for Questions) \n
+return `
+# ${response.Title}
+# Table of Contents \n
+*[Description](#description) \n
+*[Installation Instructions](#Installation Instructions) \n
+*[usage](#usage) \n
+*[contribution](#contribution) \n
+*[dependencies](#dependancies) \n
+*[test](#test) \n
+*[username](#username) \n
+ *[email](#email) \n
+*[licenses](#licenses) \n
+*[Contact for Questions](#Contact for Questions) \n
 
-    ## Description
-    ${response.Description}
+## Description
+${response.Description}
 
 
-    ## Installation
-    ${response.Installation}
+## Installation
+To install necessary dependencies, run the following command:
 
-    ## Usage
-    ${response.Usage}
+\`\`\`
+${response.Installation}
+\`\`\`
 
-    ## Contribution
-    ${response.Contributing}
+## Usage
+${response.Usage}
 
-    ## Dependancies
-    ${response.Dependancies}
+## Contribution
+${response.Contributing}
+
+## Dependancies
+${response.Dependancies}
     
-    ## Test
-    ${response.Tests}
+## Test
+${response.Tests}
     
-    ## Username
-    ${response.Github}
+## Username
+${response.Github}
     
-    ## Email
+## Email
     ${response.Email}
     
-    ## License
+## License
     ${showLicenses(response.License)}
 
-    ## Questions
+## Questions
 
-    If you have any questions about the repo, open an issue or contact me directly at ${response.Email}. You can find more of my work at [${response.Github}](https://github.com/${response.Github})
+If you have any questions about the repo, you may contact me directly at ${response.Email}. You can find more of my work at [${response.Github}](https://github.com/${response.Github})
 
-    `
+`
 }
 
 

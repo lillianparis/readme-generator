@@ -60,7 +60,7 @@ const questions = [
     },
     {
         type: "input",
-        name: "Dependancies",
+        name: "Installation",
         message: "What command should be run to install dependancies?",
         default: "npm install"
         // example npm install
@@ -72,12 +72,7 @@ const questions = [
         default: "npm test"
         // example npm test
     },
-    {
-        type: "input",
-        name: "Installation",
-        message: "Enter installation instructions"
-
-    },
+    
     {
         type: "input",
         name: "Usage",

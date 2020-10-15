@@ -1,58 +1,61 @@
 
-    # code 101
-    # Table of Contents 
+# rgrwree
+# Table of Contents 
 
-    *[Description](#description) 
+*[Description](#description) 
 
-    *[Installation Instructions](#Installation Instructionsnode) 
+*[Installation Instructions](#Installation Instructions) 
 
-    *[usage](#usage) 
+*[usage](#usage) 
 
-    *[contribution](#contribution) 
+*[contribution](#contribution) 
 
-    *[dependencies](#dependancies) 
+*[dependencies](#dependancies) 
 
-    *[test](#test) 
+*[test](#test) 
 
-    *[username](#username) 
+*[username](#username) 
 
-    *[email](#email) 
+ *[email](#email) 
 
-    *[licenses](#licenses) 
+*[licenses](#licenses) 
 
-    *[Contact for Questions](#Contact for Questions) 
-
-
-    ## Description
-    kdwjfiehuihgre
+*[Contact for Questions](#Contact for Questions) 
 
 
-    ## Installation
-    this is new
+## Description
+oeirjgirejie
 
-    ## Usage
-    noneee
 
-    ## Contribution
-    jfejfieofjoe
+## Installation
+To install necessary dependencies, run the following command:
 
-    ## Dependancies
-    npm install
+```
+npm install
+```
+
+## Usage
+erew
+
+## Contribution
+erwgr
+
+## Dependancies
+undefined
     
-    ## Test
-    npm test
+## Test
+npm test
     
-    ## Username
-    lillianparis
+## Username
+lilllian paris
     
-    ## Email
-    lillian.paris529@gmail.com
+## Email
+    lilliohfie
     
-    ## License
-    ![Github license](https://img.shields.io/badge/liscence-Apache License 2.0-blue.svg)
+## License
+    ![Github license](https://img.shields.io/badge/liscence-MIT-blue.svg)
 
-    ## Questions
+## Questions
 
-    If you have any questions about the repo, open an issue or contact me directly at lillian.paris529@gmail.com. You can find more of my work at [lillianparis](https://github.com/lillianparis)
+If you have any questions about the repo, you may contact me directly at lilliohfie. You can find more of my work at [lilllian paris](https://github.com/lilllian paris)
 
-    
