@@ -10,65 +10,75 @@ function showLicenses(license) {
     }
     return ``
 }
-function showLicenseLink(lisence) {
-    if (license !== "None") {
-        return (
-            `\n* [license](#license\n)`
-        )
-    }
-    return ``
-}
+// function showLicenseLink(license) {
+//     if (license !== "None") {
+//         return (
+//             `\n* [license](#license\n)`
+//         )
+//     }
+//     return ``
+// }
 
-function showLicenseSection(license) {
-    if (license !== "None") {
-        return (`## License
-        This project is licensed under the ${license} license`)
-    }
-    return ``
-}
+// function showLicenseSection(license) {
+//     if (license !== "None") {
+//         return (`## License
+//         This project is licensed under the ${license} license`)
+//     }
+//     return ``
+// }
 
-function projDescription(description) {
-    let descriptionString = description;
-    let render = `## Description: \n ${descriptionString} \n`;
-    return render
-}
+// function projDescription(description) {
+//     let descriptionString = description;
+//     let render = `## Description: \n ${descriptionString} \n`;
+//     return render
+// }
 // Ths displays the table of contents as well as the user input
 function makeReadMeFile(response) {
     return `
     # ${response.Title}
-    # Table of Content \n
-    -[Description](#description) \n
-    -[usage](#usage) \n
-    -[contribution](#contribution) \n
-    -[dependencies](#dependancies) \n
-    -[test](#test) \n
-    -[username](#username) \n
-    -[email](#email) \n
-    -[licenses](#licenses) \n
+    # Table of Contents \n
+    *[Description](#description) \n
+    *[Installation Instructions](#Installation Instructionsnode) \n
+    *[usage](#usage) \n
+    *[contribution](#contribution) \n
+    *[dependencies](#dependancies) \n
+    *[test](#test) \n
+    *[username](#username) \n
+    *[email](#email) \n
+    *[licenses](#licenses) \n
+    *[Contact for Questions](#Contact for Questions) \n
 
-    ##Description
+    ## Description
     ${response.Description}
 
-    ##Usage
+
+    ## Installation
+    ${response.Installation}
+
+    ## Usage
     ${response.Usage}
 
-    ##Contribution
+    ## Contribution
     ${response.Contributing}
 
-    ##Dependancies
+    ## Dependancies
     ${response.Dependancies}
     
-    ##Test
+    ## Test
     ${response.Tests}
     
-    ##Username
-    ${response.Username}
+    ## Username
+    ${response.Github}
     
-    #Email
+    ## Email
     ${response.Email}
     
-    ##License
+    ## License
     ${showLicenses(response.License)}
+
+    ## Questions
+
+    If you have any questions about the repo, open an issue or contact me directly at ${response.Email}. You can find more of my work at [${response.Github}](https://github.com/${response.Github})
 
     `
 }
@@ -77,3 +87,6 @@ function makeReadMeFile(response) {
 // exporting into the readme
 
 module.exports = makeReadMeFile;
+// module.exports = showLicenseLink;
+// module.exports = showLicenseSection;
+// module.exports = projDescription;

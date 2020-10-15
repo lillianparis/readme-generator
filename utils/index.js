@@ -29,7 +29,7 @@ const questions = [
 
     {
         type: "input",
-        name: "Username",
+        name: "Github",
         message: "What is your Github username?"
     },
     {
@@ -74,6 +74,12 @@ const questions = [
     },
     {
         type: "input",
+        name: "Installation",
+        message: "Enter installation instructions"
+
+    },
+    {
+        type: "input",
         name: "Usage",
         message: "What does the user need to know about using your repo?"
 
@@ -83,6 +89,7 @@ const questions = [
         name: "Contributing",
         message: "What does the user need to know about contributing to the repo?"
     },
+  
     // starts generating readme
 ]
 
